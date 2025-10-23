@@ -1,0 +1,103 @@
+/* Fundo cinza claro para a página inteira */
+body {
+    background-color: #F5F5F5; 
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    margin: 0;
+}
+
+/* Container centralizado para o formulário */
+.container {
+    background-color: #FFFFFF;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    width: 350px;
+    text-align: center;
+}
+
+/* Estiliza o título */
+h1 {
+    color: #FF6600; 
+    margin-bottom: 10px;
+}
+
+/* Estiliza subtítulo */
+h2 {
+    color: #333333; 
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+/* Estiliza os campos do formulário */
+form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #CCCCCC;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+/* Botão */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #FF6600; 
+    color: #FFFFFF;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #E65500;
+}
+
+/* Mensagem de sucesso */
+p {
+    color: #008000; 
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* Lista de membros */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #FFF2E6; 
+    padding: 6px 10px;
+    margin: 5px 0;
+    border-radius: 6px;
+}
+
+.equipe-card {
+    background-color: #FDF2E9; 
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.equipe-card h2 {
+    color: #F68B1F; 
+    margin-bottom: 10px;
+}
+
+.equipe-card ul li {
+    background-color: #FFE6CC;
+    padding: 5px 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+

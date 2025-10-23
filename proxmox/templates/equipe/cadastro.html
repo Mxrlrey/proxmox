@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Proxmox - Cadastro de Equipe</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Proxmox</h1>
+        <h2>Cadastre a sua equipe que participou da apresentação do Proxmox</h2>
+
+        <form method="post" action="{% url 'cadastro_equipe' %}">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Cadastrar</button>
+        </form>
+
+        {% if mensagem %}
+            <p>{{ mensagem }}</p>
+        {% endif %}
+
+        {% if membros %}
+            <h3>Participantes da equipe:</h3>
+            <ul>
+                {% for membro in membros %}
+                    <li>{{ membro.nome }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </div>
+</body>
+</html>
